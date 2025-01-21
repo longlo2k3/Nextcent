@@ -34,6 +34,10 @@
   gap: 120px;
 }
 
+.community-title .title {
+  max-width: 542px;
+}
+
 .cards .community-card {
   padding: 32px 24px;
   border-radius: 8px;
@@ -108,5 +112,8 @@
   }
   .cards .community-card {
     margin: 30px 144px;
+  }
+  .community-title .title {
+    max-width: 442px;
   }
 }

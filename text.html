@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./banner.css" />
     <link rel="stylesheet" href="./content.css" />
+    <link rel="stylesheet" href="./pixelgrade.css" />
     <link rel="stylesheet" href="./business.css" />
     <link rel="stylesheet" href="./customers.css" />
     <link rel="stylesheet" href="./blog.css" />
@@ -18,12 +19,27 @@
         <section class="header">
           <img src="./img/Logo.png" alt="ImageLogo" />
           <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">FQA</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="#Services" data-scroll="Services">Services</a></li>
+            <li>
+              <a href="#Features" data-scroll="Features" id="linktoFeatures"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#Product" data-scroll="Product" id="linktoProduct"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Testimonial"
+                data-scroll="Testimonial"
+                id="linktoTestimonial"
+                >Testimonial</a
+              >
+            </li>
+            <li><a href="#FQA" data-scroll="FQA" id="linktoFQA">FQA</a></li>
           </ul>
           <div class="h-button">
             <a href="" class="button">login</a>
@@ -33,12 +49,27 @@
         </section>
         <div class="mobile-menu">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">FQA</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="#Services" data-scroll="Services">Services</a></li>
+            <li>
+              <a href="#Features" data-scroll="Features" id="linktoFeatures"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#Product" data-scroll="Product" id="linktoProduct"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Testimonial"
+                data-scroll="Testimonial"
+                id="linktoTestimonial"
+                >Testimonial</a
+              >
+            </li>
+            <li><a href="#FQA" data-scroll="FQA" id="linktoFQA">FQA</a></li>
           </ul>
           <div class="mobile-button">
             <a href="" class="btn-login">login</a>
@@ -46,25 +77,27 @@
           </div>
         </div>
         <section>
-          <div class="container">
-            <div>
-              <p>Lessons and insights <span>from 8 years</span></p>
-              <p>
-                Where to grow your business as a photographer: site or social
-                media?
-              </p>
-              <button>Register</button>
+          <section>
+            <div class="container">
+              <div>
+                <p>Lessons and insights <span>from 8 years</span></p>
+                <p>
+                  Where to grow your business as a photographer: site or social
+                  media?
+                </p>
+                <button>Register</button>
+              </div>
+              <img src="./img/Illustration.png" alt="Img" />
             </div>
-            <img src="./img/Illustration.png" alt="Img" />
-          </div>
-          <div class="pagination-dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
+            <div class="pagination-dots">
+              <div class="dot active"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </section>
         </section>
       </div>
-      <section>
+      <section id="Services">
         <div class="banner">
           <div class="clients">
             <p class="title">Our Clients</p>
@@ -111,7 +144,7 @@
               <p class="title" style="max-width: 200px">
                 National Associations
               </p>
-              <p style="max-width: 230px" class="desc">
+              <p class="desc">
                 Our membership management software provides full automation of
                 membership renewals and payments
               </p>
@@ -131,7 +164,7 @@
         </div>
       </section>
       <section>
-        <section class="pd pixelgrade">
+        <section id="Features" class="pd pixelgrade">
           <img src="./img/Frame 35.png" alt="" />
           <div>
             <div>
@@ -150,7 +183,7 @@
             <button>Learn more</button>
           </div>
         </section>
-        <section class="business">
+        <section id="Product" class="business">
           <div>
             <p class="title">
               Helping a local <span>business reinvent itself</span>
@@ -190,7 +223,7 @@
             </div>
           </div>
         </section>
-        <section class="pd design pixelgrade">
+        <section id="Testimonial" class="pd design pixelgrade">
           <img src="./img/pana.png" alt="" />
           <div>
             <div>
@@ -239,14 +272,14 @@
                 <img src="./img/client(5).png" alt="" />
                 <img src="./img/client(6).png" alt="" />
                 <div>
-                  <p>Meet all customers</p>
+                  <a class="customers-readmore" href="">Meet all customers</a>
                   <img src="./img/Right.png" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="blog-section">
+        <section id="FQA" class="blog-section">
           <h1 class="blog-title title">Caring is the new marketing</h1>
           <p class="blog-description desc">
             The Nexcent blog is the best place to read about the latest
@@ -260,7 +293,7 @@
               <div class="card-content">
                 <p>Creating Streamlined Safeguarding Processes with OneRen</p>
                 <div class="readmore">
-                  <p>Readmore</p>
+                  <a href="">Readmore</a>
                   <img src="./img/Right.png" alt="" />
                 </div>
               </div>
@@ -273,7 +306,7 @@
                   manage them?
                 </p>
                 <div class="readmore">
-                  <p>Readmore</p>
+                  <a href="">Readmore</a>
                   <img src="./img/Right.png" alt="" />
                 </div>
               </div>
@@ -283,7 +316,7 @@
               <div class="card-content">
                 <p>Revamping the Membership Model with Triathlon Australia</p>
                 <div class="readmore">
-                  <p>Readmore</p>
+                  <a href="">Readmore</a>
                   <img src="./img/Right.png" alt="" />
                 </div>
               </div>
@@ -303,12 +336,19 @@
         </section>
         <section class="footer-content">
           <div class="footer-logo">
-            <img src="./img/Logofooter.png" alt="" />
+            <div>
+              <img src="./img/Logofooter.png" alt="" />
+            </div>
             <div class="copyright">
               <p>Copyright © 2020 Nexcent ltd.</p>
               <p>All rights reserved</p>
             </div>
-            <img src="./img/Social Links.png" alt="" />
+            <div class="social-img">
+              <img src="./img/Social Icons.png" alt="" />
+              <img src="./img/Social Icons1.png" alt="" />
+              <img src="./img/Social Icons2.png" alt="" />
+              <img src="./img/Social Icons3.png" alt="" />
+            </div>
           </div>
           <div class="footer-links">
             <div class="footer-link">
@@ -370,6 +410,24 @@
     const header = document.querySelector(".header");
     const mobileMenu = document.querySelector(".mobile-menu");
     const btnOutlined = document.querySelector(".outlined-ic");
+    const dots = document.querySelectorAll(".dot");
+    const menuLinks = document.querySelectorAll(".menu a");
+    const menuMobileLinks = document.querySelectorAll(".mobile-menu a");
+    const container = document.querySelector(".container");
+
+    // header scroll
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0 && window.scrollY < container.offsetHeight) {
+        header.style.position = "fixed";
+        header.style.width = "100%";
+        header.style.backgroundColor = "#d2d4d7";
+      } else {
+        header.style.position = "relative";
+        header.style.backgroundColor = "#f5f7fa";
+      }
+    });
+
+    // menu
     const updateMobileMenu = () => {
       if (window.innerWidth <= 1020) {
         btnOutlined.addEventListener("click", toggleMenu);
@@ -389,8 +447,7 @@
     window.addEventListener("resize", updateMobileMenu);
     updateMobileMenu();
 
-    const dots = document.querySelectorAll(".dot");
-
+    // dots
     dots.forEach((dot, index) => {
       dot.addEventListener("click", () => {
         dots.forEach((dot) => dot.classList.remove("active"));
@@ -398,6 +455,43 @@
       });
     });
 
-    console.log(document.querySelectorAll(".cards .community-title div"));
+    // scroll
+    document.addEventListener("DOMContentLoaded", () => {
+      scrollToSection(menuLinks);
+      scrollToSection(menuMobileLinks);
+    });
+
+    function scrollToSection(sectionId) {
+      sectionId.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          const targetId = event.target.getAttribute("data-scroll");
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            const targetPosition = targetElement.offsetTop;
+            const startPosition = window.scrollY;
+            const distance = targetPosition - startPosition;
+            const duration = 1000;
+            let startTime = null;
+
+            const animation = (currentTime) => {
+              if (!startTime) startTime = currentTime;
+              const timeElapsed = currentTime - startTime;
+              const run = ease(timeElapsed, startPosition, distance, duration);
+              window.scrollTo(0, run);
+              if (timeElapsed < duration) requestAnimationFrame(animation);
+            };
+
+            const ease = (t, b, c, d) => {
+              t /= d / 2;
+              if (t < 1) return (c / 2) * t * t + b;
+              t--;
+              return (-c / 2) * (t * (t - 2) - 1) + b;
+            };
+            requestAnimationFrame(animation);
+          }
+        });
+      });
+    }
   </script>
 </html>

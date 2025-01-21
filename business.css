@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .business .title {
   max-width: 408px;
   display: flex;
@@ -64,6 +65,9 @@
 }
 
 @media screen and (max-width: 1020px) {
+  .business {
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -71,7 +75,6 @@
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
   }
-
   .business .title {
     text-align: center;
   }
