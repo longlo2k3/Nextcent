@@ -1,6 +1,6 @@
 .banner,
 .community {
-  padding: 30px 144px;
+  padding: 36px 144px;
 }
 
 .banner div:nth-child(1) {
@@ -35,7 +35,7 @@
 }
 
 .community-title .title {
-  max-width: 542px;
+  max-width: 540px;
 }
 
 .cards .community-card {
@@ -102,6 +102,9 @@
     flex-wrap: wrap;
     gap: 50px;
   }
+  .community-title .title {
+    max-width: 90%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -112,8 +115,5 @@
   }
   .cards .community-card {
     margin: 30px 144px;
-  }
-  .community-title .title {
-    max-width: 442px;
   }
 }

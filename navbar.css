@@ -72,10 +72,24 @@ li a:hover {
   background-color: #f5f7fa;
 }
 .header {
+  position: static;
+  width: 100%;
+  display: none;
+  transition: all 0.3s ease;
   display: flex;
   justify-content: space-between;
   padding: 30px 144px;
   align-items: center;
+}
+
+.fixed {
+  position: fixed;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d1d1d1;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .header > img:hover {

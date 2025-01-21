@@ -15,11 +15,11 @@
   </head>
   <body>
     <div>
-      <div class="wrapper">
+      <div id="Home" class="wrapper">
         <section class="header">
           <img src="./img/Logo.png" alt="ImageLogo" />
           <ul class="menu">
-            <li><a href="">Home</a></li>
+            <li><a href="#Home" data-scroll="Home">Home</a></li>
             <li><a href="#Services" data-scroll="Services">Services</a></li>
             <li>
               <a href="#Features" data-scroll="Features" id="linktoFeatures"
@@ -49,7 +49,7 @@
         </section>
         <div class="mobile-menu">
           <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="#Home" data-scroll="Home">Home</a></li>
             <li><a href="#Services" data-scroll="Services">Services</a></li>
             <li>
               <a href="#Features" data-scroll="Features" id="linktoFeatures"
@@ -417,13 +417,10 @@
 
     // header scroll
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 0 && window.scrollY < container.offsetHeight) {
-        header.style.position = "fixed";
-        header.style.width = "100%";
-        header.style.backgroundColor = "#d2d4d7";
+      if (window.scrollY > 0) {
+        header.classList.add("fixed");
       } else {
-        header.style.position = "relative";
-        header.style.backgroundColor = "#f5f7fa";
+        header.classList.remove("fixed");
       }
     });
 
@@ -486,7 +483,7 @@
               t /= d / 2;
               if (t < 1) return (c / 2) * t * t + b;
               t--;
-              return (-c / 2) * (t * (t - 2) - 1) + b;
+              return (-c / 2) * (t * (t - 3) - 1) + b;
             };
             requestAnimationFrame(animation);
           }
