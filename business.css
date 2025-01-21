@@ -3,6 +3,7 @@
   background-color: #f5f7fa;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  transition: all 0.3s ease;
 }
 
 .business .title {

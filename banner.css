@@ -1,6 +1,7 @@
 .banner,
 .community {
   padding: 36px 144px;
+  transition: all 0.3s ease;
 }
 
 .banner div:nth-child(1) {

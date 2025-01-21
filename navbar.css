@@ -198,6 +198,7 @@ li a:hover {
   grid-template-columns: 2fr 1fr;
   padding: 96px 144px;
   margin: 0 24px;
+  transition: all 0.3s ease;
 }
 
 .container div {

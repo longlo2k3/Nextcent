@@ -4,6 +4,7 @@
 .footer-banner {
   padding: 30px 144px;
   background-color: #f5f7fa;
+  transition: all 0.3s ease;
 }
 
 .footer-banner div {
@@ -63,6 +64,7 @@
   justify-content: space-between;
   padding: 64px 165px;
   background-color: #1a1a1a;
+  transition: all 0.3s ease;
 }
 
 .footer-content > div {

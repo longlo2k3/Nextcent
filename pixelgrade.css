@@ -1,10 +1,12 @@
 .pd {
   padding: 30px 144px;
+  transition: all 0.3s ease;
 }
 .pixelgrade {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
+  transition: all 0.3s ease;
 }
 
 .pixelgrade div:nth-child(2) {

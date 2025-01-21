@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 78px;
   background-color: #f5f7fa;
+  transition: all 0.3s ease;
 }
 
 .customers .logo {
